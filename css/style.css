@@ -88,6 +88,12 @@
         transform: scale(1.3);
     }
     
+    .shrink:hover {
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    
     .fade {
         opacity: 0.5;
     }
