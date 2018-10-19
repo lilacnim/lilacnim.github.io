@@ -19,10 +19,11 @@ a {
 /* 본문 스타일 */
 
 html {
-    font-size: 1.6rem;
+    font-size: 10px;
 }
 
 body {
+    font-size: 1.6rem;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
     color: #181818;
@@ -41,6 +42,7 @@ body {
 .bg-header {
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .bg-header,
@@ -124,8 +126,7 @@ body {
 } */
 
 .content {
-    background: skyblue;
-    min-height: 500px;
+
     display: flex;
     flex-wrap: wrap;
 }
@@ -188,13 +189,12 @@ body {
 /* 새소식 */
 
 .news,
-.media,
-.favorite {
+.media {
     padding: 20px;
 }
 
 .news {
-    background: pink;
+
     width: 400px;
 }
 
@@ -215,10 +215,25 @@ body {
     height: auto;
 }
 .media {
-    background: lime;
+
     width: 600px;
 }
 
+.iframe-wrapper{
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-top: calc(9/16*100%);
+    margin-top:1em;
+}
+.iframe-wrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* 인기사이트  */
 .favorite {
     background: orange;
     width: 1000px;
@@ -226,5 +241,13 @@ body {
 
 .footer {
     background: transparent;
-    min-height: 100px;
+    color: white;
+    padding: 20px 0;
+}
+.address{
+    font-style: normal;
+    margin-bottom: 1em;
+}
+.address span{
+    margin-right: 1.5em;
 }
